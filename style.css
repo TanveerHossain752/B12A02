@@ -139,14 +139,132 @@
     margin-bottom: 20px;
     color: rgba(0, 0, 0, 0.5);
 }
+.section2-badge-container{
+    position: relative;
+    left: -200px;
+    top: -250px;
+}
 .trusted-badge{
     width: 286px;
     height: 286px;
-    position: relative;
-    left: 350px;
-    bottom: 725px;
     filter: drop-shadow(4px 10px 4px rgba(0, 0, 0, 0.25));
 }
+
+
+
+.top-1{
+    margin-top: 140px;
+}
+.section3-header-container{
+    text-align: center;
+}
+.section3-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.section3-description{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.card-1{
+    background-image: url('assets/deal-bloom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    display: flex;
+}
+.card-3{
+    background-image: url('assets/deal-ana.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    display: flex;
+}
+.card-2{
+    background-image: url('assets/deal-zabo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-row: span 2;
+    grid-column: span 2;
+    border-radius: 22px;
+    display: flex;
+}
+.section3-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    column-gap: 28px;
+}
+
+.title-2{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 175px;
+    margin-bottom: 0px;
+}
+.title{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 65px;
+    margin-bottom: 0px;
+}
+.button{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 65px;
+    text-decoration: underline;
+}
+.button-2{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 150px;
+    text-decoration: underline;
+}
+.common-card{
+    background-color: rgba(0, 0, 0, 0.4);
+    flex: 1;
+    border-radius: 14px;
+}
+.common-card-1{
+    background-color: rgba(0, 0, 0, 0.4);
+    flex: 1;
+    border-radius: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 576px) {
@@ -189,8 +307,8 @@
     .section1-image-container{
         grid-template-columns: repeat(2, 1fr);
     }
-    .section1-description{
-        width: 80%;
+    .section1-description, .section3-description{
+        width: 95%;
         margin: 0 auto;
     }
     .section2-title{
@@ -199,5 +317,40 @@
     }
     .trusted-badge{
         display: none;
+    }
+
+    .section3-cards-container{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        column-gap: 0px
+    }
+    .card-3{
+        grid-row: 2;
+    }
+     .card-1, .card-3{
+        background-size: cover;
+     }
+    .card-2, .common-card-1{
+        border-radius: 14px;
+    }
+    .common-card,.common-card-1{
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .title-2{
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 65px;
+        margin-bottom: 0px;
+    }
+    .button-2{
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 65px;
+        text-decoration: underline;
     }
 }
